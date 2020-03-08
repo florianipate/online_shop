@@ -7,13 +7,13 @@ class Hero extends React.Component {
         super();
         this.state = {
             cards : [{
-                    title: 'women',
-                    imageUrl: 'https://http://masseyandco.com/images/men/M_HERO_DOUBLE_CARD.jpg',
+                    title: 'Women',
+                    imageUrl: 'https://masseyandco.com/images/women/W_HERO_DOUBLE_CARD.jpg',
                     id: '1'
                 },
                 {
-                    title: 'men',
-                    imageUrl: 'http://masseyandco.com/images/men/M_HERO_DOUBLE_CARD.jpg',
+                    title: 'Men',
+                    imageUrl: 'https://masseyandco.com/images/men/M_HERO_DOUBLE_CARD.jpg',
                     id: 2
                 }]
         }
@@ -23,7 +23,7 @@ class Hero extends React.Component {
            <div className="hero">
                {
                    this.state.cards.map(({title, id, imageUrl}) => (
-                       <HeroInner key = {id} title = {title}/>
+                       <HeroInner key = {id} title = {title} imageUrl = {imageUrl}/>
                    ))
                }
            </div>
