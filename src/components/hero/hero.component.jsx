@@ -9,12 +9,14 @@ class Hero extends React.Component {
             cards : [{
                     title: 'Women',
                     imageUrl: 'https://masseyandco.com/images/women/W_HERO_DOUBLE_CARD.jpg',
-                    id: '1'
+                    id: '1',
+                    linkUrl: 'women'
                 },
                 {
                     title: 'Men',
                     imageUrl: 'https://masseyandco.com/images/men/M_HERO_DOUBLE_CARD.jpg',
-                    id: 2
+                    id: 2,
+                    linkUrl: 'men'
                 }]
         }
     }
@@ -22,8 +24,8 @@ class Hero extends React.Component {
         return(
            <div className="hero">
                {
-                   this.state.cards.map(({title, id, imageUrl}) => (
-                       <HeroInner key = {id} title = {title} imageUrl = {imageUrl}/>
+                   this.state.cards.map(({ id, ...otherSectionProps }) => (
+                       <HeroInner key = {id} {...otherSectionProps} />
                    ))
                }
            </div>
