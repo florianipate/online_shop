@@ -1,0 +1,35 @@
+.section-inner{
+
+    flex-basis: 50%;
+    /* padding-right: 1rem; */
+    background-clip: content-box;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .section-inner:nth-child(2n+1){
+    padding-right: 0.5rem;
+  }
+  
+  .section-inner:nth-child(2n){
+    padding-left: 0.5rem;
+  }
+  /* .section-inner:nth-child(2n){
+    padding-right: 0;
+  } */
+  @media screen and (min-width: 768px){
+    .section-inner{
+      flex-basis: 25%;
+    }
+    .section-inner:nth-child(1){
+      padding-right: 0.5rem;
+    }
+    .section-inner:nth-child(2){
+      padding:0  0.5rem;
+    }
+    .section-inner:nth-child(3){
+      padding:0  0.5rem;
+    }
+    .section-inner:nth-child(4){
+      padding-left:0.5rem;
+    }
+  }
