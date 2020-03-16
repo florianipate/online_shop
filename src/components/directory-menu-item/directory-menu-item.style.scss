@@ -1,0 +1,30 @@
+.menu-inner{
+    flex-basis: 50%;
+    height: 100px;
+    text-align: center;
+    background-color: #dcdede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    background-clip: content-box;
+    color: #333;
+  }
+  .menu-inner:hover{
+    background-color:#c9c0c7;
+  }
+  
+  @media screen and (min-width: 673px){
+    .menu-inner{
+      flex-basis: 33.3%;
+    }
+  } 
+  
+  @media screen and (min-width:900px){
+    .menu-inner{ 
+      flex-basis: 16.66667%;
+    } 
+  }

@@ -1,7 +1,9 @@
 import React from 'react';
 import '../homepage/homepage.style.scss';
+import DirectoryMenu from '../../components/directory-menu/directory-menu.component.jsx';
+import DirectoryMenueItem from '../../components/directory-menu-item/directory-menu-item.component.jsx';
 import Hero from '../../components/hero/hero.component.jsx';
-import HeroInner from '../../components/hero-inner/hero-inner.component.jsx'
+import HeroInner from '../../components/hero-inner/hero-inner.component.jsx';
 import SectionBlock from '../../components/section-block/section-block.component.jsx';
 import SectionCard from '../../components/section-card/section-card.component.jsx';
 
@@ -9,6 +11,35 @@ class MenPage extends React.Component {
     constructor(){
         super();
         this.state = {
+            directory_menu_card:[{
+                title:'Clothing',
+                id: 1,
+                linkUrl: '/clothing'
+            },
+            {
+                title:'Shoes',
+                id: 2,
+                linkUrl: '/shoes'
+            },
+            {
+                title:'Watches',
+                id: 3,
+                linkUrl: '/watches'
+            },
+            {
+                title:'Bags',
+                id: 4,
+                linkUrl: '/bags'
+            },
+            {
+                title:'Luggage',
+                id: 5,
+                linkUrl: '/luggage'
+            },{
+                title:'Trainers',
+                id: 6,
+                linkUrl: '/trainers'
+            }],
             hero_cards:[{
                 title: 'Shirts',
                 imageUrl: 'https://masseyandco.com/images/men/shirt.jpg',
@@ -47,6 +78,13 @@ class MenPage extends React.Component {
     render () {
         return(
         <div className = "container">
+            <DirectoryMenu>
+                {
+                   this.state.directory_menu_card.map(({ id, ...otherSectionProps }) => (
+                    <DirectoryMenueItem key = {id} {...otherSectionProps} /> 
+                )) 
+                }
+            </DirectoryMenu>
             <Hero>
             {
                 this.state.hero_cards.map(({ id, ...otherSectionProps }) => (
