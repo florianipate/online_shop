@@ -22,9 +22,9 @@ class BoysPage extends React.Component {
                 linkUrl: '/shoes'
             },
             {
-                title:'Bags',
+                title:'Trainers',
                 id: 3,
-                linkUrl: '/bags'
+                linkUrl: '/trainers'
             },
             {
                 title:'Watches',
@@ -32,13 +32,13 @@ class BoysPage extends React.Component {
                 linkUrl: '/watches'
             },
             {
-                title:'Jewellery',
+                title:'Backpacks',
                 id: 5,
-                linkUrl: '/jewellery'
+                linkUrl: '/backpacks'
             },{
-                title:'Luggage',
+                title:'Hoodies',
                 id: 6,
-                linkUrl: '/luggage'
+                linkUrl: '/hoodies'
             }],
             hero_cards:[{
                 title: 'Tops & Shirts',
@@ -47,17 +47,17 @@ class BoysPage extends React.Component {
                 linkUrl: '/shirts'
             },
             {
-                title: 'Court Shoes',
+                title: 'Sandals',
                 imageUrl: 'https://masseyandco.com/images/image1440x930.jpg',
                 id: 2,
-                linkUrl: '/shoes'
+                linkUrl: '/sandals'
             }],
 
             section_cards:[{
-                title: 'Trainers',
+                title: 'Shorts',
                 imageUrl: 'https://masseyandco.com/images/image680x680.jpg',
                 id:1,
-                linkUrl: '/trainers'
+                linkUrl: '/shorts'
             },
            {
                title: 'Outware',

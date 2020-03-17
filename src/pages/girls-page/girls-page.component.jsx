@@ -22,9 +22,9 @@ class GirlsPage extends React.Component {
                 linkUrl: '/shoes'
             },
             {
-                title:'Bags',
+                title:'Backpacks',
                 id: 3,
-                linkUrl: '/bags'
+                linkUrl: '/backpacks'
             },
             {
                 title:'Watches',
@@ -36,25 +36,25 @@ class GirlsPage extends React.Component {
                 id: 5,
                 linkUrl: '/jewellery'
             },{
-                title:'Luggage',
+                title:'Trainers',
                 id: 6,
-                linkUrl: '/luggage'
+                linkUrl: '/trainers'
             }],
             hero_cards:[{
-                title: 'Tops & Shirts',
+                title: 'Dream Dreass',
                 imageUrl: 'https://masseyandco.com/images/image1440x930.jpg',
                 id: '1',
-                linkUrl: '/shirts'
+                linkUrl: '/dresses'
             },
             {
-                title: 'Court Shoes',
+                title: 'Jacket',
                 imageUrl: 'https://masseyandco.com/images/image1440x930.jpg',
                 id: 2,
-                linkUrl: '/shoes'
+                linkUrl: '/jacket'
             }],
 
             section_cards:[{
-                title: 'Trainers',
+                title: 'Tops &Blouses',
                 imageUrl: 'https://masseyandco.com/images/image680x680.jpg',
                 id:1,
                 linkUrl: '/trainers'
@@ -66,16 +66,16 @@ class GirlsPage extends React.Component {
                linkUrl: '/outwares'
            },
            {
-               title: 'Trousers',
+               title: 'Shorts',
                imageUrl: 'https://masseyandco.com/images/image680x680.jpg',
                id:3,
-               linkUrl: '/trousers'
+               linkUrl: '/shorts'
            },
            {
-               title: 'Underweare',
+               title: 'Pyjamas',
                imageUrl: 'https://masseyandco.com/images/image680x680.jpg',
                id:4,
-               linkUrl: '/underware'
+               linkUrl: '/pyjamas'
            }]
         }
     }
