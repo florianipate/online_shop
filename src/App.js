@@ -3,6 +3,7 @@ import HomePage from './pages/homepage/homepage.component';
 import { Switch, Route } from 'react-router-dom';
 import  MenPage from './pages/menpage/menpage.component.jsx';
 import WomenPage from './pages/womenpage/womenpage.component.jsx';
+import GirlsPage from './pages/girls-page/girls-page.component.jsx';
 import './App.css';
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route exact path= '/women' component= {WomenPage} />
         <Route path= '/men' component= {MenPage} />
         <Route path = '/women' component = {WomenPage} />
+        <Route path = '/girls' component = {GirlsPage} />
       </Switch>
     </div>
   );
