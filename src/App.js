@@ -2,13 +2,10 @@ import React from 'react';
 import HomePage from './pages/homepage/homepage.component';
 import { Switch, Route } from 'react-router-dom';
 import  MenPage from './pages/menpage/menpage.component.jsx';
+import WomenPage from './pages/womenpage/womenpage.component.jsx';
 import './App.css';
 
-const WomenPage = () => (
-  <div>
-    <h1>Women Page</h1>
-  </div>
-);
+
 
 
 function App() {
@@ -18,6 +15,7 @@ function App() {
         <Route exact path= '/' component= {HomePage} />
         <Route exact path= '/women' component= {WomenPage} />
         <Route path= '/men' component= {MenPage} />
+        <Route path = '/women' component = {WomenPage} />
       </Switch>
     </div>
   );
