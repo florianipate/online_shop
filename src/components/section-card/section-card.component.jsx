@@ -1,8 +1,9 @@
 import React from 'react';
 import './section-card.style.scss';
+import { withRouter } from 'react-router-dom';
 
-const SectionCard = ({title, imageUrl}) => (
-    <div className="section-inner">
+const SectionCard = ({title, imageUrl, history, linkUrl, match}) => (
+    <div className="section-inner" onClick = {() => history.push(`${match.url}${linkUrl}`)}>
         <div className = "background-image">
             <img src={imageUrl} width="100%" height="100%"  alt="image1"/>
         </div>
@@ -13,4 +14,4 @@ const SectionCard = ({title, imageUrl}) => (
         </div>
     </div>
 );
-export default SectionCard;
+export default withRouter(SectionCard);

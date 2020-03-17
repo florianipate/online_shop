@@ -13,34 +13,38 @@ class HomePage extends React.Component {
                 title: 'Women',
                 imageUrl: 'https://masseyandco.com/images/women/W_HERO_DOUBLE_CARD.jpg',
                 id: '1',
-                linkUrl: 'women'
+                linkUrl: 'women/'
             },
             {
                 title: 'Men',
                 imageUrl: 'https://masseyandco.com/images/men/M_HERO_DOUBLE_CARD.jpg',
                 id: 2,
-                linkUrl: 'men'
+                linkUrl: 'men/'
             }],
 
             section_cards:[{
                 title: 'girls',
                 imageUrl: 'https://masseyandco.com/images/girls/girl.jpg',
-                id:1
+                id:1,
+                linkUrl: 'girls'
             },
            {
                title: 'boys',
                imageUrl: 'https://masseyandco.com/images/boys/boys.jpg',
-               id:2
+               id:2,
+               linkUrl: 'boys'
            },
            {
                title: 'baby',
                imageUrl: 'https://masseyandco.com/images/baby/baby.jpg',
-               id:3
+               id:3,
+               linkUrl: 'baby'
            },
            {
                title: 'accessories',
                imageUrl: 'https://masseyandco.com/images/accessories/accessories.jpg',
-               id:4
+               id:4,
+               linkUrl: 'accessories'
            }]
         }
     }

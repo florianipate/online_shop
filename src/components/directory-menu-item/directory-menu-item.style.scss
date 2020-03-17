@@ -1,6 +1,6 @@
 .menu-inner{
     flex-basis: 50%;
-    height: 100px;
+    height: 60px;
     text-align: center;
     background-color: #dcdede;
     display: flex;
@@ -14,6 +14,7 @@
     color: #333;
   }
   .menu-inner:hover{
+      cursor: pointer;
     background-color:#c9c0c7;
   }
   

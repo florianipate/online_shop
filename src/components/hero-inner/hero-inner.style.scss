@@ -14,13 +14,6 @@
       background-position: center;
       transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
-     & :hover{
-       cursor: pointer;
-       &.background-image{
-         transform: scale(1.6);
-         transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-       }
-     }
     .subtitle{
       width: 200px;
       position: absolute;
@@ -32,10 +25,26 @@
         text-align: center;
         background-color: #ffffff;
         opacity: 0.7;
+        transition: opacity 1s ease-in;
+        border: 0.05rem solid #333;
       }
+    }  
+  
+  &:hover{
+    cursor: pointer;
+    & .background-image{
+      transform: scale(1.6);
+      transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
-    
+    & .content{
+      opacity: 1;
+      transition: opacity 1s ease-in;
+    }
+   }
   }
+  // .hero-inner:hover .content{
+  //   opacity: 1;
+  // }
   @media screen and (min-width:768px){
     .hero-inner{
       flex-basis: 50%;
