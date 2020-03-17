@@ -50,28 +50,32 @@ class MenPage extends React.Component {
                 title: 'Jeans',
                 imageUrl: 'https://masseyandco.com/images/men/jeans.jpg',
                 id: 2,
-                linkUrl: '/men'
+                linkUrl: '/jeans'
             }],
 
             section_cards:[{
                 title: 'Trainers',
                 imageUrl: 'https://masseyandco.com/images/men/trainers.jpg',
-                id:1
+                id:1,
+                linkUrl: '/trainers'
             },
            {
                title: 'Outware',
                imageUrl: 'https://masseyandco.com/images/men/QUAD_CARD_EDOITORIAL_OUTERWEAR._SS680_QL85_.jpg',
-               id:2
+               id:2,
+               linkUrl: '/outware'
            },
            {
                title: 'Trousers',
                imageUrl: 'https://masseyandco.com/images/men/trausers.jpg',
-               id:3
+               id:3,
+               linkUrl: '/trousers'
            },
            {
                title: 'Gim Kit',
                imageUrl: 'https://masseyandco.com/images/men/gim_kit.jpg',
-               id:4
+               id:4,
+               linkUrl: '/gim-kit'
            }]
         }
     }
